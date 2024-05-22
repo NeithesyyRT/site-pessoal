@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 body {
@@ -38,7 +39,7 @@ header  {
 
 
 section {
-    background-image: radial-gradient(#2e3030, #f03219);
+    background-image: radial-gradient(#5e5c5c, #e61111);
     height: 100vh;
     position: relative;
 
@@ -82,6 +83,7 @@ section {
                 & h2 {
                     font-size: 8em;
                     line-height: 1em;
+                    font-family: "League Gothic", sans-serif;
                 }
 
                 & .descrição {
@@ -101,9 +103,20 @@ section {
                     color: #000;
                     cursor: pointer;
                     font-weight: bold;
+                    font-family: "League Gothic", sans-serif;
                 }
             }
             
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 200px;
+            width: 100%;
+            top: 50%;
+            border-top: 1px solid #fff;
+
         }
     }
 
@@ -126,9 +139,19 @@ section {
             top: 60%;
             width: 50px;
             height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer; 
+
             & img {
                 width: 30px;
-            }    
+                margin-top: 3px;
+                cursor: pointer;
+            }  
+            
+            &:hover {
+                background-color: #cbff51;
+            }
         }
     }
 
@@ -145,7 +168,8 @@ section {
         gap: 15px;
 
         & .numero {
-            font-size: 5em;    
+            font-size: 5em; 
+            font-family: "League Gothic", sans-serif;   
         }
 
         & ul {
@@ -166,4 +190,5 @@ section {
         }
     }
 }
+
 
