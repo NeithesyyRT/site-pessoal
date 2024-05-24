@@ -13,7 +13,7 @@ body {
     overflow: hidden;
 }
 
-header  {
+header {
     position: fixed;
     width: 80vw;
     left: 50%;
@@ -72,7 +72,7 @@ section {
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: end;
+                justify-content: center;
                 align-items: end;
                 gap: 20px;
 
@@ -91,7 +91,7 @@ section {
                     font-size: 12px;
                     text-align: right;
                     max-width: 400px;
-                }   
+                }
 
                 & .informação {
                     border-radius: 30px;
@@ -106,7 +106,7 @@ section {
                     font-family: "League Gothic", sans-serif;
                 }
             }
-            
+
         }
 
         &::before {
@@ -141,14 +141,14 @@ section {
             height: 50px;
             border-radius: 50%;
             border: none;
-            cursor: pointer; 
+            cursor: pointer;
 
             & img {
                 width: 30px;
                 margin-top: 3px;
                 cursor: pointer;
-            }  
-            
+            }
+
             &:hover {
                 background-color: #cbff51;
             }
@@ -168,8 +168,8 @@ section {
         gap: 15px;
 
         & .numero {
-            font-size: 5em; 
-            font-family: "League Gothic", sans-serif;   
+            font-size: 5em;
+            font-family: "League Gothic", sans-serif;
         }
 
         & ul {
@@ -191,4 +191,67 @@ section {
     }
 }
 
+section {
+    & .list {
 
+        & .item {
+            transform: translateX(100vw);
+            transition: 0.5s;
+            opacity: 0;
+
+            & .car-img {
+                & img {
+                    transform: rotate(0);
+                    transition: 0.5s;
+                    transition-delay: 0, 3;
+                }
+            }
+
+            & .content {
+
+                & .informaçoes,
+                h2,
+                .descrição,
+                .informação {
+                    transform: translateX(200px);
+                    transition: 0.7s;
+                    transition-delay: 0.3s;
+                }
+
+                & h2 {
+                    transition-delay: 0.5s;
+                }
+
+                & .descrição {
+                    transition-delay: 0.7s;
+                }
+
+                & .informação {
+                    transition-delay: 0.9s;
+                }
+            }
+        }
+
+        & .active {
+            transform: translateX(0);
+            transition: 0.5s;
+            opacity: 1;
+
+            & .car-img {
+                & img {
+                    transform: rotate(-10deg);
+                }
+            }
+
+            & .content {
+
+                & .informaçoes,
+                h2,
+                .descrição,
+                .informação {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}
