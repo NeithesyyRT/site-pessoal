@@ -67,8 +67,8 @@ section {
 
             & .content {
                 position: relative;
-                top: 80;
-                left: 40;
+                top: 80px;
+                left: 40px;
                 right: 100px;
                 width: 70%;
                 height: 100%;
