@@ -89,14 +89,14 @@ section {
                 & .descrição {
                     color: #f1eded;
                     font-size: 12px;
-                    text-align: right;
+                    text-align: end;
                     max-width: 400px;
                 }
 
                 & .informação {
                     border-radius: 30px;
                     height: 35px;
-                    width: 100px;
+                    width: 120px;
                     text-transform: uppercase;
                     border: 3px solid #035e17;
                     background-color: #cbff51;
