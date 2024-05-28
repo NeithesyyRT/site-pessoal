@@ -66,9 +66,7 @@ section {
             }
 
             & .content {
-                position: relative;
-                top: 40px;
-                left: 40px;
+                position: absolute;
                 right: 100px;
                 width: 70%;
                 height: 100%;
@@ -98,7 +96,7 @@ section {
                 & .informação {
                     border-radius: 30px;
                     height: 35px;
-                    width: 10px;
+                    width: 120px;
                     text-transform: uppercase;
                     border: 3px solid #035e17;
                     background-color: #cbff51;
