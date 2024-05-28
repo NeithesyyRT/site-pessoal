@@ -250,6 +250,7 @@ section {
                 .descrição,
                 .informação {
                     transform: translateX(0);
+                    opacity: 1;
                 }
             }
         }
