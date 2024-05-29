@@ -14,13 +14,19 @@ nextButton.onclick = () => {
     itemOld.classList.remove('active')
 
     active = active + 1 > lastPosition ? 0 : active + 1
-    items [active].classList.add('active')
+    items[active].classList.add('active')
+
+    let dotsOld = indicadores.querySelector('ul li.active')
+    dotsOld.classList.remove('active')
+    dots[active].classList.add('active')
+
+    indicadores.querySelector('.numero').innerHTML = '0' + (active + 1)
 }
 
 prevButton.onclick = () => {
     let itemOld = container.querySelector('.list .item.active')
     itemOld.classList.remove('active')
 
-    active = active + 1 > lastPosition ? 0 : active + 1
-    items [active].classList.add('active')
+    active = active - 1 < firstPosition ? lastPosition : active - 1
+    items[active].classList.add('active')
 }
