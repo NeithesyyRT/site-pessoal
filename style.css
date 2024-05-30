@@ -55,9 +55,10 @@ section {
 
             & .car-img {
                 position: absolute;
+                right: 150px;
                 top: 50%;
                 transform: translateY(-50%);
-                width: 70%;
+                width: 80%;
 
                 & img {
                     width: 100%;
@@ -66,17 +67,16 @@ section {
             }
 
             & .content {
-                position: relative;
+                position: absolute;
                 top: 150px;
-                left: 0px;
-                right: 200px;
+                right: 50px;
                 width: 70%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: end;
-                gap: 20px;
+                gap: 35px;
 
                 & car-information {
                     font-size: bold;
