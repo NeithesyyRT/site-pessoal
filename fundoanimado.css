@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #0c192c;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.bolhas {
+    position: absolute;
+    display: flex;
+}
+
+.bolhas span {
+    width: 30px;
+    height: 30px;
+    background: #e5ff00;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #e5ff0044;
+}
