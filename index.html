@@ -1,62 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo Animado Galáxia</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background: black;
-        }
-
-        .stars {
-            width: 10px;
-            height: 10px;
-            background: transparent;
-            box-shadow: 
-                100px 200px white,
-                150px 300px white,
-                200px 400px white,
-                250px 500px white,
-                300px 600px white;
-            animation: animStars 1s linear infinite;
-        }
-
-        @keyframes animStars {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(-200px);
-            }
-        }
-
-        .twinkling {
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            box-shadow: 
-                0 0 2px 2px rgba(255, 255, 255, 0.3),
-                0 0 4px 4px rgba(255, 255, 255, 0.2),
-                0 0 6px 6px rgba(255, 255, 255, 0.1);
-            animation: animTwinkling 200s linear infinite;
-        }
-
-        @keyframes animTwinkling {
-            from {
-                transform: translateY(0);
-            }
-            to {
-                transform: translateY(-2000px);
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Simas Dos Turbo</title>
 </head>
+
 <body>
-    <div class="stars"></div>
-    <div class="twinkling"></div>
+    <header>
+        <img src="./img/logo.png" alt="logo fp">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Carros</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="list">
+            
+            <div class="item active">
+                <div class="car-img">
+                    <img src="./img/1.png" alt="imagem carro">
+                </div>
+                <div class="content">
+                    <P class="informaçoes">
+                        MARCA
+                    </P>
+                    <h2>
+                        Ferrari
+                    </h2>
+                    <p class="descrição">
+                        A Ferrari Portofino M 2023 está equipada com um motor 3.9 V8 de 620 cv e 77,5 kgfm, combinado
+                        com um câmbio automatizado de oito marchas e dupla embreagem e a tração traseira. A carroceria
+                        tem 4594 mm de comprimento, 1938 mm de largura, 1318 mm de altura e 2670 mm de entre-eixos.
+                    </p>
+                    <button class="informação">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="car-img">
+                    <img src="./img/2.png" alt="imagem carro">
+                </div>
+                <div class="content">
+                    <P class="informaçoes">
+                        MARCA
+                    </P>
+                    <h2>
+                        Porsche 911 
+                    </h2>
+                    <p class="descrição">
+                        Sob o capô, este cupê possui um motor de 640 cavalos com 590 lb-pés de torque e você pode
+                        acelerar de 0 a 60 mph em apenas 2,7 segundos. O 911 Turbo 2024 também está bem equipado para
+                        segurança e precisão, com recursos como freios carbono-cerâmicos e uma nova suspensão Porsche
+                        Active Suspension Management Sport
+                    </p>
+                    <button class="informação">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="car-img">
+                    <img src="./img/3.png" alt="imagem carro">
+                </div>
+                <div class="content">
+                    <P class="informaçoes">
+                        MARCA
+                    </P>
+                    <h2>
+                        Lamborghini
+                    </h2>
+                    <p class="descrição">
+                        O trem de força do Lamborghini apresenta um V-12 de 6,5 litros naturalmente aspirado montado no
+                        centro que desenvolve 769 cavalos de potência. O torque de 531 libras-pés do motor chega às
+                        quatro rodas por meio de uma transmissão manual automatizada de sete velocidades.
+                    </p>
+                    <button class="informação">
+                        Saiba Mais
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="setas">
+            <button id="prev"><img src="./img/arrow.png" alt="seta esquerda"></button>
+            <button id="next"><img src="./img/arrow.png" alt="seta direita"></button>
+        </div>
+
+        <div class="indicadores">
+            <div class="numero">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
