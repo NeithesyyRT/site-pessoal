@@ -20,7 +20,7 @@ nextButton.onclick = () => {
     dotsOld.classList.remove('active')
     dots[active].classList.add('active')
 
-    indicadores.querySelector('.numero').innerHTML = '0' + (active + 3)
+    indicadores.querySelector('.numero').innerHTML = '0' + (active + 4)
 }
 
 prevButton.onclick = () => {
@@ -34,5 +34,5 @@ prevButton.onclick = () => {
     dotsOld.classList.remove('active')
     dots[active].classList.add('active')
 
-    indicadores.querySelector('.numero').innerHTML = '0' + (active  + 3)
+    indicadores.querySelector('.numero').innerHTML = '0' + (active  + 4)
 }
