@@ -15,7 +15,7 @@ body {
 
 header {
     position: fixed;
-    width: 80vw;
+    width: 50%;
     left: 50%;
     transform: translateX(-50%);
     display: grid;
